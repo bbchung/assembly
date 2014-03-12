@@ -1,0 +1,411 @@
+let SessionLoad = 1
+if &cp | set nocp | endif
+let s:cpo_save=&cpo
+set cpo&vim
+inoremap <Nul> 
+inoremap <expr> <Up> pumvisible() ? "\" : "\<Up>"
+inoremap <expr> <S-Tab> pumvisible() ? "\" : "\<S-Tab>"
+inoremap <expr> <Down> pumvisible() ? "\" : "\<Down>"
+inoremap <silent> <SNR>47_AutoPairsReturn =AutoPairsReturn()
+inoremap <silent> <C-Tab> =UltiSnips_ListSnippets()
+snoremap <silent>  c
+snoremap <silent> <NL> :call UltiSnips_JumpForwards()
+snoremap <silent>  :call UltiSnips_JumpBackwards()
+nnoremap <silent>  :CtrlP
+nmap d :cs find d =expand("<cword>")  
+nmap i :cs find i ^=expand("<cfile>")$
+nmap f :cs find f =expand("<cfile>")  
+nmap e :cs find e =expand("<cword>")  
+nmap t :cs find t =expand("<cword>")  
+nmap c :cs find c =expand("<cword>")  
+nmap g :cs find g =expand("<cword>")  
+nmap s :cs find s =expand("<cword>")
+nmap  :YcmCompleter GoToDefinitionElseDeclaration
+nnoremap \d :YcmShowDetailedDiagnostic
+nmap \ihn :IHN
+nmap \is :IHS:A
+nmap \ih :IHS
+nnoremap <silent> \p :call conque_gdb#print_word(expand("<cword>"))
+nnoremap <silent> \t :call conque_gdb#command("backtrace")
+nnoremap <silent> \f :call conque_gdb#command("finish")
+nnoremap <silent> \s :call conque_gdb#command("step")
+nnoremap <silent> \n :call conque_gdb#command("next")
+nnoremap <silent> \r :call conque_gdb#command("run")
+nnoremap <silent> \c :call conque_gdb#command("continue")
+nnoremap <silent> \b :call conque_gdb#toggle_breakpoint(expand("%:p"), line("."))
+xnoremap \	 :call UltiSnips_SaveLastVisualSelection()gvs
+snoremap <silent> \	 :call UltiSnips_ExpandSnippet()
+nmap gx <Plug>NetrwBrowseX
+nnoremap <silent> <Plug>NetrwBrowseX :call netrw#NetrwBrowseX(expand("<cWORD>"),0)
+nnoremap <silent> <F11> :call conque_term#exec_file()
+snoremap <silent> <Del> c
+snoremap <silent> <BS> c
+snoremap <silent> <C-Tab> :call UltiSnips_ListSnippets()
+nmap <F4> :NERDTreeToggle
+nmap <F2> :Tlist
+inoremap <expr> 	 pumvisible() ? "\" : "\	"
+inoremap <silent> <NL> =UltiSnips_JumpForwards()
+inoremap <silent>  =UltiSnips_JumpBackwards()
+imap \ihn :IHN
+imap \is :IHS:A
+imap \ih :IHS
+inoremap <silent> \	 =UltiSnips_ExpandSnippet()
+let &cpo=s:cpo_save
+unlet s:cpo_save
+set completefunc=youcompleteme#Complete
+set completeopt=menuone
+set cpoptions=aAceFsB
+set cscopeprg=gtags-cscope
+set cscopetag
+set fileencodings=utf8,big5,gb2312,utf-16
+set formatprg=astyle\ -A1TCSKfpHUk3W3ynq\ --delete-empty-lines
+set grepprg=grep\ -nH\ $*
+set helplang=tw
+set hlsearch
+set ignorecase
+set incsearch
+set laststatus=2
+set makeprg=make\ -j3
+set mouse=a
+set omnifunc=youcompleteme#OmniComplete
+set previewheight=4
+set pumheight=12
+set ruler
+set runtimepath=~/.vim/bundle/jellybeans.vim,~/.vim/bundle/chaotic,~/.vim/bundle/ctrlp.vim,~/.vim/bundle/vundle,~/.vim/bundle/syntastic,~/.vim/bundle/nerdtree,~/.vim/bundle/vim-powerline,~/.vim/bundle/YouCompleteMe,~/.vim/bundle/MatchTagAlways,~/.vim/bundle/ultisnips,~/.vim/bundle/auto-pairs,~/.vim/bundle/Conque-GDB,~/.vim/bundle/taglist.vim,~/.vim/bundle/CSApprox,~/.vim/bundle/bufexplorer.zip,~/.vim/bundle/a.vim,~/.vim,/usr/local/share/vim/vimfiles,/usr/local/share/vim/vim74,/usr/local/share/vim/vimfiles/after,~/.vim/after,~/.vim/bundle/vundle/,~/.vim/bundle/jellybeans.vim/after,~/.vim/bundle/chaotic/after,~/.vim/bundle/ctrlp.vim/after,~/.vim/bundle/vundle/after,~/.vim/bundle/syntastic/after,~/.vim/bundle/nerdtree/after,~/.vim/bundle/vim-powerline/after,~/.vim/bundle/YouCompleteMe/after,~/.vim/bundle/MatchTagAlways/after,~/.vim/bundle/ultisnips/after,~/.vim/bundle/auto-pairs/after,~/.vim/bundle/Conque-GDB/after,~/.vim/bundle/taglist.vim/after,~/.vim/bundle/CSApprox/after,~/.vim/bundle/bufexplorer.zip/after,~/.vim/bundle/a.vim/after
+set scrolloff=3
+set sessionoptions=buffers,curdir,folds,winsize,options,globals
+set shiftwidth=4
+set showcmd
+set smartcase
+set smartindent
+set switchbuf=usetab
+set tabpagemax=100
+set tabstop=4
+set termencoding=utf-8
+set title
+set undodir=~/.vimundodir
+set undofile
+set updatetime=2000
+set wildmode=list:longest,full
+let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
+let v:this_session=expand("<sfile>:p")
+let NERDTreeMapPreviewSplit = "gi"
+let NERDTreeMapCloseChildren = "X"
+let Tlist_Sort_Type = "order"
+let NERDTreeShowHidden = "0"
+let Powerline_cache_enabled =  1 
+let Tlist_Enable_Fold_Column =  1 
+let ConqueTerm_EscKey = "<Esc>"
+let Tlist_Use_SingleClick =  0 
+let UltiSnipsUsePythonVersion = "<tab>"
+let NERDTreeMapCloseDir = "x"
+let AutoPairsMapBS =  1 
+let ConqueTerm_Color =  1 
+let ConqueTerm_Version =  230 
+let AutoPairsShortcutBackInsert = "<M-b>"
+let Tlist_Show_One_File =  1 
+let NERDTreeMinimalUI = "0"
+let NERDTreeShowLineNumbers = "0"
+let Pl#OLD_STL = ""
+let Tlist_Compact_Format =  0 
+let UltiSnipsExpandTrigger = "<Leader><tab>"
+let EasyGrepMode =  2 
+let NERDTreeMapOpenInTabSilent = "T"
+let AutoPairsShortcutToggle = "<M-p>"
+let NERDTreeAutoDeleteBuffer =  0 
+let ConqueTerm_SendFileKey = "<F10>"
+let ConqueGdb_Print = "<Leader>p"
+let ConqueGdb_GdbExe = ""
+let ConqueTerm_SendFunctionKeys =  0 
+let AutoPairsMapCR =  1 
+let NERDTreeBookmarksFile = "/home/bb/.NERDTreeBookmarks"
+let UltiSnipsJumpForwardTrigger = "<c-j>"
+let NERDTreeMapToggleHidden = "I"
+let NERDTreeWinSize = "31"
+let CSApprox_loaded =  1 
+let Tlist_Ctags_Cmd = "ctags"
+let ConqueGdb_Continue = "<Leader>c"
+let NERDTreeMapToggleFiles = "F"
+let UltiSnipsRemoveSelectModeMappings =  1 
+let ConqueGdb_Disable =  0 
+let Tlist_Process_File_Always =  0 
+let Powerline_theme = "default"
+let NERDTreeMapPreview = "go"
+let AutoPairsShortcutFastWrap = "<M-e>"
+let ConqueTerm_PyExe = ""
+let ConqueTerm_ColorMode = ""
+let CSApprox_verbose_level =  1 
+let NERDTreeNotificationThreshold = "100"
+let NERDTreeMapActivateNode = "o"
+let NERDTreeWinPos = "right"
+let AutoPairsSmartQuotes =  1 
+let Tlist_WinHeight =  10 
+let NERDTreeMapMenu = "m"
+let ConqueTerm_ShowBell =  0 
+let NERDTreeStatusline = "%{exists('b:NERDTreeRoot')?b:NERDTreeRoot.path.str():''}"
+let Tlist_Display_Tag_Scope =  1 
+let ConqueGdb_SrcSplit = "above"
+let NERDTreeMapHelp = "?"
+let ConqueTerm_FastMode =  0 
+let NERDTreeMapJumpParent = "p"
+let NERDTreeMapToggleFilters = "f"
+let NERDTreeCasadeOpenSingleChildDir = "1"
+let ConqueGdb_Next = "<Leader>n"
+let NERDTreeAutoCenter = "1"
+let TagList_title = "__Tag_List__"
+let NERDTreeMapJumpPrevSibling = "<C-k>"
+let NERDTreeShowBookmarks = "0"
+let NERDTreeRemoveDirCmd = "rm -rf "
+let ConqueTerm_ToggleKey = "<F8>"
+let ConqueGdb_Leader = "<Leader>"
+let Powerline_loaded =  1 
+let NERDTreeMouseMode = "1"
+let ConqueTerm_UnfocusedUpdateTime =  500 
+let ConqueTerm_TermLoaded =  1 
+let NERDTreeChDirMode = "0"
+let ConqueGdb_Finish = "<Leader>f"
+let ConqueTerm_CloseOnEnd =  0 
+let ConqueTerm_InsertCharPre =  0 
+let Powerline_symbols = "unicode"
+let Tlist_Highlight_Tag_On_BufEnter =  1 
+let Tlist_Auto_Highlight_Tag =  1 
+let ConqueTerm_CodePage =  0 
+let AutoPairsCenterLine =  1 
+let Powerline_cache_revision =  7 
+let NERDTreeAutoCenterThreshold = "3"
+let NERDTreeShowFiles = "1"
+let ConqueGdb_Backtrace = "<Leader>t"
+let NERDTreeMapOpenSplit = "i"
+let ConqueTerm_StartMessages =  1 
+let NERDTreeCaseSensitiveSort = "0"
+let AutoPairsLoaded =  1 
+let NERDTreeHijackNetrw = "1"
+let Tlist_Max_Submenu_Items =  20 
+let ConqueTerm_InsertOnEnter =  0 
+let NERDTreeMapRefresh = "r"
+let NERDTreeHighlightCursorline = "1"
+let NERDTreeMapOpenInTab = "t"
+let ConqueGdb_ToggleBreak = "<Leader>b"
+let Powerline_stl_path_style = "relative"
+let ConqueTerm_ExecFileKey = "<F11>"
+let Tlist_Inc_Winwidth =  1 
+let NERDTreeMapCWD = "CD"
+let Tlist_GainFocus_On_ToggleOpen =  0 
+let NERDTreeMapPreviewVSplit = "gs"
+let NERDChristmasTree = "1"
+let NERDTreeMapUpdir = "u"
+let NERDTreeMapJumpRoot = "P"
+let UltiSnipsJumpBackwardTrigger = "<c-k>"
+let BufExplorer_title = "[Buf List]"
+let ConqueGdb_Run = "<Leader>r"
+let NERDTreeMapChdir = "cd"
+let Tlist_Exit_OnlyWindow =  1 
+let NERDTreeMapToggleZoom = "A"
+let AutoPairsShortcutJump = "<M-n>"
+let Tlist_Display_Prototype =  0 
+let AutoPairsMapSpace =  1 
+let ConqueGdb_Step = "<Leader>s"
+let NERDTreeMapRefreshRoot = "R"
+let Tlist_Max_Tag_Length =  10 
+let Powerline_cache_dir = "/home/bb/.vim/bundle/vim-powerline"
+let AutoPairsFlyMode =  0 
+let UltiSnipsPythonPath = "/home/bb/.vim/bundle/ultisnips/plugin"
+let NERDTreeMapOpenVSplit = "s"
+let ConqueTerm_ReadUnfocused =  0 
+let NERDTreeMapJumpLastChild = "J"
+let Tlist_WinWidth =  24 
+let NERDTreeMapDeleteBookmark = "D"
+let UltiSnipsListSnippets = "<c-tab>"
+let Tlist_Close_On_Select =  0 
+let Tlist_File_Fold_Auto_Close =  0 
+let NERDTreeMapJumpNextSibling = "<C-j>"
+let Tlist_Auto_Open =  0 
+let Tlist_Use_Horiz_Window =  0 
+let UltiSnipsEditSplit = "normal"
+let NERDTreeCopyCmd = "cp -r "
+let ConqueTerm_SendVisKey = "<F9>"
+let NERDTreeMapQuit = "q"
+let NERDTreeMapChangeRoot = "C"
+let ConqueTerm_SessionSupport =  0 
+let NERDTreeSortDirs = "1"
+let ConqueTerm_TERM = "vt100"
+let ConqueTerm_CWInsert =  0 
+let NERDTreeDirArrows = "1"
+let ConqueTerm_Idx =  0 
+let ConqueTerm_TerminalsString = ""
+let ConqueTerm_PromptRegex = "^\\w\\+@[0-9A-Za-z_.-]\\+:[0-9A-Za-z_./\\~,:-]\\+\\$"
+let NERDTreeMapOpenExpl = "e"
+let NERDTreeMapJumpFirstChild = "K"
+let Tlist_Use_Right_Window =  0 
+let Powerline_colorscheme = "default"
+let Tlist_Auto_Update =  1 
+let NERDTreeMapOpenRecursively = "O"
+let NERDTreeMapToggleBookmarks = "B"
+let CSApprox_redirfallback =  0 
+let ConqueTerm_Interrupt = "<C-c>"
+let ConqueTerm_FocusedUpdateTime =  80 
+let ConqueTerm_Loaded =  1 
+let ConqueTerm_Syntax = "conque_term"
+let NERDTreeMapUpdirKeepOpen = "U"
+let NERDTreeQuitOnOpen = "0"
+let Tlist_Show_Menu =  0 
+let ConqueTerm_PyVersion =  2 
+let Powerline_cache_file = "/home/bb/.vim/bundle/vim-powerline/Powerline_default_default_unicode.cache"
+silent only
+cd ~/work/ch9
+if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
+  let s:wipebuf = bufnr('%')
+endif
+set shortmess=aoO
+badd +0 test.cpp
+args test.cpp
+edit test.cpp
+set splitbelow splitright
+set nosplitbelow
+set nosplitright
+wincmd t
+set winheight=1 winwidth=1
+argglobal
+let s:cpo_save=&cpo
+set cpo&vim
+inoremap <buffer> <silent> <BS> =AutoPairsDelete()
+inoremap <buffer> <silent> î :call AutoPairsJump()a
+inoremap <buffer> <silent> <expr> ð AutoPairsToggle()
+inoremap <buffer> <silent> â =AutoPairsBackInsert()
+inoremap <buffer> <silent> å =AutoPairsFastWrap()
+inoremap <buffer> <silent>  =AutoPairsDelete()
+inoremap <buffer> <silent>   =AutoPairsSpace()
+inoremap <buffer> <silent> " =AutoPairsInsert('"')
+inoremap <buffer> <silent> ' =AutoPairsInsert('''')
+inoremap <buffer> <silent> ( =AutoPairsInsert('(')
+inoremap <buffer> <silent> ) =AutoPairsInsert(')')
+noremap <buffer> <silent> î :call AutoPairsJump()
+noremap <buffer> <silent> ð :call AutoPairsToggle()
+inoremap <buffer> <silent> [ =AutoPairsInsert('[')
+inoremap <buffer> <silent> ] =AutoPairsInsert(']')
+inoremap <buffer> <silent> ` =AutoPairsInsert('`')
+inoremap <buffer> <silent> { =AutoPairsInsert('{')
+inoremap <buffer> <silent> } =AutoPairsInsert('}')
+let &cpo=s:cpo_save
+unlet s:cpo_save
+setlocal keymap=
+setlocal noarabic
+setlocal noautoindent
+setlocal nobinary
+setlocal bufhidden=
+setlocal buflisted
+setlocal buftype=
+setlocal cindent
+setlocal cinkeys=0{,0},0),:,0#,!^F,o,O,e
+setlocal cinoptions=
+setlocal cinwords=if,else,while,do,for,switch
+setlocal colorcolumn=
+setlocal comments=sO:*\ -,mO:*\ \ ,exO:*/,s1:/*,mb:*,ex:*/,://
+setlocal commentstring=/*%s*/
+setlocal complete=.,w,b,u,t,i
+set concealcursor=nc
+setlocal concealcursor=nc
+setlocal conceallevel=0
+setlocal completefunc=youcompleteme#Complete
+setlocal nocopyindent
+setlocal cryptmethod=
+setlocal nocursorbind
+setlocal nocursorcolumn
+setlocal nocursorline
+setlocal define=
+setlocal dictionary=
+setlocal nodiff
+setlocal equalprg=
+setlocal errorformat=
+setlocal noexpandtab
+if &filetype != 'cpp'
+setlocal filetype=cpp
+endif
+setlocal foldcolumn=0
+setlocal foldenable
+setlocal foldexpr=0
+setlocal foldignore=#
+setlocal foldlevel=0
+setlocal foldmarker={{{,}}}
+set foldmethod=syntax
+setlocal foldmethod=syntax
+setlocal foldminlines=1
+setlocal foldnestmax=20
+setlocal foldtext=foldtext()
+setlocal formatexpr=
+setlocal formatoptions=croql
+setlocal formatlistpat=^\\s*\\d\\+[\\]:.)}\\t\ ]\\s*
+setlocal grepprg=
+setlocal iminsert=0
+setlocal imsearch=0
+setlocal include=
+setlocal includeexpr=
+setlocal indentexpr=
+setlocal indentkeys=0{,0},:,0#,!^F,o,O,e
+setlocal noinfercase
+setlocal iskeyword=@,48-57,_,192-255
+setlocal keywordprg=
+setlocal nolinebreak
+setlocal nolisp
+setlocal nolist
+setlocal makeprg=
+setlocal matchpairs=(:),{:},[:]
+setlocal modeline
+setlocal modifiable
+setlocal nrformats=octal,hex
+set number
+setlocal number
+setlocal numberwidth=4
+setlocal omnifunc=youcompleteme#OmniComplete
+setlocal path=
+setlocal nopreserveindent
+setlocal nopreviewwindow
+setlocal quoteescape=\\
+setlocal noreadonly
+setlocal norelativenumber
+setlocal norightleft
+setlocal rightleftcmd=search
+setlocal noscrollbind
+setlocal shiftwidth=4
+setlocal noshortname
+setlocal smartindent
+setlocal softtabstop=0
+setlocal nospell
+setlocal spellcapcheck=[.?!]\\_[\\])'\"\	\ ]\\+
+setlocal spellfile=
+setlocal spelllang=en
+setlocal statusline=%!Pl#Statusline(0,1)
+setlocal suffixesadd=
+setlocal swapfile
+setlocal synmaxcol=3000
+if &syntax != 'cpp'
+setlocal syntax=cpp
+endif
+setlocal tabstop=4
+setlocal tags=
+setlocal textwidth=0
+setlocal thesaurus=
+setlocal undofile
+setlocal nowinfixheight
+setlocal nowinfixwidth
+setlocal wrap
+setlocal wrapmargin=0
+let s:l = 1 - ((0 * winheight(0) + 24) / 48)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+1
+normal! 0
+if exists('s:wipebuf')
+  silent exe 'bwipe ' . s:wipebuf
+endif
+unlet! s:wipebuf
+set winheight=1 winwidth=20 shortmess=filnxtToO
+let s:sx = expand("<sfile>:p:r")."x.vim"
+if file_readable(s:sx)
+  exe "source " . fnameescape(s:sx)
+endif
+let &so = s:so_save | let &siso = s:siso_save
+doautoall SessionLoadPost
+unlet SessionLoad
+" vim: set ft=vim :

@@ -1,0 +1,216 @@
+# 本 viminfo 檔案是由 Vim 7.4 所產生.
+# 如果想要自行修改請特別小心！
+
+# 'encoding' 在此檔建立時的值
+*encoding=utf-8
+
+
+# hlsearch on (H) or off (h):
+~h
+# Last Search Pattern:
+~MSle0~/normal
+
+# 命令列 歷史記錄 (新到舊):
+:qa
+:qa!
+:colorscheme chaotic
+:colorscheme jellybeans
+:col
+:w
+:e solarized256.vim
+:co
+:e ~/.vimrc
+:bd
+:e ../vim-powerline/autoload/Pl.vim
+:e ../vim-powerline/plugin/Powerline.vim
+:e ~/Desktop/
+:jjjjjjjjjjjjjjjj
+:e ../chaotic/colors/chaotic.vim
+:c
+:256
+:colorscheme default
+:help powerline
+:db
+
+# 搜尋字串 歷史記錄 (新到舊):
+?/normal
+?/Normal
+?/status
+?/NC
+?/power
+?/spli
+?/Spli
+?/Split
+?/Status
+?/n
+?/low
+?/nc
+?/statusline
+?/color
+?/finish
+?/call
+? \<file_name\>
+?/test
+? \<ST_OUTPUT_DESCRIPTOR\>
+?/+
+
+# 運算式 歷史記錄 (新到舊):
+
+# 輸入行  歷史記錄 (新到舊):
+@y
+
+# 輸入行  歷史記錄 (新到舊):
+
+# 暫存器:
+"0	CHAR	0
+		\ Pl#Hi#Segments(['currenttag', 'fullcurrenttag', 'fileformat', 'fileencoding', 'pwd', 'filetype', 'rvm:string', 'rvm:statusline', 'virtualenv:statusline', 'charcode', 'currhigroup'], {
+			\ 'n': ['gray5', 'gray2'],
+			\ 'i': ['mediumcyan', 'base02'],
+			\ }),
+		\
+	
+""1	LINE	0
+		\
+"2	LINE	0
+			\ }),
+"3	LINE	0
+			\ 'i': ['mediumcyan', 'darkestblue'],
+"4	LINE	0
+			\ 'n': ['gray8', 'gray2'],
+"5	LINE	0
+		\ Pl#Hi#Segments(['currenttag', 'fullcurrenttag', 'fileformat', 'fileencoding', 'pwd', 'filetype', 'rvm:string', 'rvm:statusline', 'virtualenv:statusline', 'charcode', 'currhigroup'], {
+"6	LINE	0
+	
+"7	LINE	0
+	let g:Powerline_colorscheme = 'solarized256'
+"8	LINE	0
+	let g:power
+"9	LINE	0
+	movl %eax, %ebx
+"a	CHAR	0
+	ff0000
+"-	CHAR	0
+	solarized256
+
+# 檔案標記:
+'0  1  0  ~/work/ch9/test.cpp
+'1  1  0  ~/work/ch9/alloc.s
+'2  59  2  ~/.vim/bundle/vim-powerline/autoload/Powerline/Colorschemes/default.vim
+'3  86  1  ~/.vim/bundle/vim-powerline/autoload/Powerline/Colorschemes/default.vim
+'4  2  0  ~/work/ch9/alloc.s
+'5  228  0  ~/.vimrc
+'6  1  1  ~/.vim/bundle/NERD_tree_1
+'7  12  14  ~/.vimrc
+'8  18  0  ~/work/ch9/[Vundle] Installer
+'9  247  32  ~/work/ch9/alloc.s
+
+# Jumplist (由新到舊):
+-'  1  0  ~/work/ch9/test.cpp
+-'  1  0  ~/work/ch9/alloc.s
+-'  59  2  ~/.vim/bundle/vim-powerline/autoload/Powerline/Colorschemes/default.vim
+-'  1  0  ~/.vim/bundle/vim-powerline/autoload/Powerline/Colorschemes/default.vim
+-'  86  1  ~/.vim/bundle/vim-powerline/autoload/Powerline/Colorschemes/default.vim
+-'  87  0  ~/.vim/bundle/vim-powerline/autoload/Powerline/Colorschemes/default.vim
+-'  88  2  ~/.vim/bundle/vim-powerline/autoload/Powerline/Colorschemes/default.vim
+-'  89  2  ~/.vim/bundle/vim-powerline/autoload/Powerline/Colorschemes/default.vim
+-'  90  2  ~/.vim/bundle/vim-powerline/autoload/Powerline/Colorschemes/default.vim
+-'  91  1  ~/.vim/bundle/vim-powerline/autoload/Powerline/Colorschemes/default.vim
+-'  92  119  ~/.vim/bundle/vim-powerline/autoload/Powerline/Colorschemes/default.vim
+-'  50  2  ~/.vim/bundle/vim-powerline/autoload/Powerline/Colorschemes/default.vim
+-'  2  0  ~/work/ch9/alloc.s
+-'  228  0  ~/.vimrc
+-'  32  0  ~/.vimrc
+-'  192  10  ~/.vim/bundle/chaotic/colors/chaotic.vim
+-'  193  10  ~/.vim/bundle/chaotic/colors/chaotic.vim
+-'  99  0  ~/.vim/bundle/chaotic/colors/chaotic.vim
+-'  228  4  ~/.vim/bundle/chaotic/colors/chaotic.vim
+-'  195  58  ~/.vim/bundle/chaotic/colors/chaotic.vim
+-'  194  14  ~/.vim/bundle/chaotic/colors/chaotic.vim
+-'  14  0  ~/.vim/bundle/chaotic/colors/chaotic.vim
+-'  209  4  ~/.vim/bundle/chaotic/colors/chaotic.vim
+-'  198  55  ~/.vim/bundle/chaotic/colors/chaotic.vim
+-'  2  0  ~/.vim/bundle/chaotic/colors/chaotic.vim
+-'  336  32  ~/.vim/bundle/jellybeans.vim/colors/jellybeans.vim
+-'  525  12  ~/.vim/bundle/jellybeans.vim/colors/jellybeans.vim
+-'  520  0  ~/.vim/bundle/jellybeans.vim/colors/jellybeans.vim
+-'  61  8  ~/.vim/bundle/jellybeans.vim/colors/jellybeans.vim
+-'  34  24  ~/.vim/bundle/jellybeans.vim/colors/jellybeans.vim
+-'  1  0  ~/.vim/bundle/jellybeans.vim/colors/jellybeans.vim
+-'  503  5  ~/.vim/bundle/jellybeans.vim/colors/jellybeans.vim
+-'  335  10  ~/.vim/bundle/jellybeans.vim/colors/jellybeans.vim
+-'  14  0  ~/.vim/bundle/jellybeans.vim/colors/jellybeans.vim
+-'  22  0  ~/.vim/bundle/jellybeans.vim/colors/jellybeans.vim
+-'  1  1  ~/.vim/bundle/NERD_tree_1
+-'  7  2  ~/.vim/bundle/NERD_tree_1
+-'  12  14  ~/.vimrc
+-'  1  0  ~/.vimrc
+-'  18  0  ~/work/ch9/[Vundle] Installer
+-'  18  46  ~/work/ch9/alloc.s
+-'  247  32  ~/work/ch9/alloc.s
+-'  1  0  /tmp/vOjTuVu/50
+-'  18  0  ~/work/[Vundle] Installer
+-'  1  0  ~/work/main.c
+-'  11  8  ~/work/ch8/helloworld-lib.s
+-'  9  0  ~/work/ch8/helloworld-lib.s
+-'  1  0  ~/work/ch8/helloworld-lib.s
+-'  1  0  /tmp/vDZt4xD/49
+-'  18  0  ~/work/ch8/[Vundle] Installer
+-'  14  18  ~/work/ch8/linux.s
+-'  1  0  ~/work/ch8/linux.s
+-'  15  29  ~/work/ch6/read-record.s
+-'  1  0  ~/work/ch6/read-record
+-'  1  0  ~/work/ch6/read-records.s
+-'  16  9  ~/work/ch6/read-record.s
+-'  21  2  ~/work/square.s
+-'  4  0  ~/work/ch6/write-record.s
+-'  228  0  ~/.vimrc
+-'  32  0  ~/.vimrc
+-'  192  10  ~/.vim/bundle/chaotic/colors/chaotic.vim
+-'  193  10  ~/.vim/bundle/chaotic/colors/chaotic.vim
+-'  99  0  ~/.vim/bundle/chaotic/colors/chaotic.vim
+-'  228  4  ~/.vim/bundle/chaotic/colors/chaotic.vim
+-'  195  58  ~/.vim/bundle/chaotic/colors/chaotic.vim
+-'  194  14  ~/.vim/bundle/chaotic/colors/chaotic.vim
+-'  14  0  ~/.vim/bundle/chaotic/colors/chaotic.vim
+-'  209  4  ~/.vim/bundle/chaotic/colors/chaotic.vim
+-'  198  55  ~/.vim/bundle/chaotic/colors/chaotic.vim
+-'  2  0  ~/.vim/bundle/chaotic/colors/chaotic.vim
+-'  336  32  ~/.vim/bundle/jellybeans.vim/colors/jellybeans.vim
+-'  525  12  ~/.vim/bundle/jellybeans.vim/colors/jellybeans.vim
+-'  520  0  ~/.vim/bundle/jellybeans.vim/colors/jellybeans.vim
+-'  61  8  ~/.vim/bundle/jellybeans.vim/colors/jellybeans.vim
+-'  34  24  ~/.vim/bundle/jellybeans.vim/colors/jellybeans.vim
+-'  1  0  ~/.vim/bundle/jellybeans.vim/colors/jellybeans.vim
+-'  503  5  ~/.vim/bundle/jellybeans.vim/colors/jellybeans.vim
+-'  335  10  ~/.vim/bundle/jellybeans.vim/colors/jellybeans.vim
+-'  14  0  ~/.vim/bundle/jellybeans.vim/colors/jellybeans.vim
+-'  22  0  ~/.vim/bundle/jellybeans.vim/colors/jellybeans.vim
+-'  1  1  ~/.vim/bundle/NERD_tree_1
+-'  7  2  ~/.vim/bundle/NERD_tree_1
+-'  12  14  ~/.vimrc
+-'  1  0  ~/.vimrc
+-'  18  0  ~/work/ch9/[Vundle] Installer
+-'  1  0  /tmp/vOjTuVu/50
+-'  18  0  ~/work/[Vundle] Installer
+-'  1  0  ~/work/main.c
+-'  11  8  ~/work/ch8/helloworld-lib.s
+-'  9  0  ~/work/ch8/helloworld-lib.s
+-'  1  0  ~/work/ch8/helloworld-lib.s
+-'  59  2  ~/.vim/bundle/vim-powerline/autoload/Powerline/Colorschemes/default.vim
+-'  1  0  ~/.vim/bundle/vim-powerline/autoload/Powerline/Colorschemes/default.vim
+-'  86  1  ~/.vim/bundle/vim-powerline/autoload/Powerline/Colorschemes/default.vim
+-'  87  0  ~/.vim/bundle/vim-powerline/autoload/Powerline/Colorschemes/default.vim
+-'  88  2  ~/.vim/bundle/vim-powerline/autoload/Powerline/Colorschemes/default.vim
+-'  89  2  ~/.vim/bundle/vim-powerline/autoload/Powerline/Colorschemes/default.vim
+-'  90  2  ~/.vim/bundle/vim-powerline/autoload/Powerline/Colorschemes/default.vim
+
+# 檔案內 Mark 記錄 (由新到舊):
+
+> ~/work/ch9/test.cpp
+	"	1	0
+	^	1	5
+	.	1	4
+	+	1	9
+	+	2	1
+	+	3	0
+	+	1	4
